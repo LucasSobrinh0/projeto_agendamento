@@ -3,10 +3,12 @@
 from rest_framework import generics
 from .serializers import ClienteSerializer, AgendamentoSerializer
 from .models import Cliente, Agendamento
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 class BaseClienteView(generics.GenericAPIView):
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
 
 class ListarClientes(BaseClienteView, generics.ListAPIView):
     pass
@@ -23,6 +25,7 @@ class ExcluirClientes(BaseClienteView, generics.DestroyAPIView):
 class BaseAgendamentoView(generics.GenericAPIView):
     queryset = Agendamento.objects.all()
     serializer_class = AgendamentoSerializer
+    permission_classes = [IsAuthenticated, IsAdminUser]
 
 class ListarAgendamentos(BaseAgendamentoView, generics.ListAPIView):
     pass
