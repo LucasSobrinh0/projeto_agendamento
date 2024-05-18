@@ -13,3 +13,9 @@ cd agendamento
 python manage.py makemigrations
  
 python manage.py migrate
+
+PARA USAR A APLICAÇÃO, VOCÊ PRECISA ADICIONAR UM SUPER USUÁRIO ANTES:
+
+cd agendamento
+
+python manage.py createsuperuser
