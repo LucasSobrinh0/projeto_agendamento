@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../login/auth.js"></script>
+  <script src="../login/fetch-wrapper.js"></script>
+  <title>Editar Agendamento</title>
+</head>
+
+<body>
+  <a href="../index/index.html">Início</a>
+  <a href="../clientes/criar_cliente.html">Criar cliente</a>
+  <a href="listar_agendamento.html">Agendamentos</a>
+  <a href="criar_agendamento.html">Criar agendamento</a>
+  <a href="" id="logoutButton">Logout</a>
+  <h1>Editar Agendamento</h1>
+  <form id="editarAgendamentoForm">
+    <h2 id="nomeCliente"></h2>
+    <label for="dataHora">Data e Hora:</label>
+    <input type="datetime-local" id="dataHora" name="dataHora"><br>
+
+    <label for="observacoes">Observações:</label>
+    <textarea id="observacoes" name="observacoes"></textarea><br>
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <script src="editar_agendamento.js"></script>
+  <script src="../logout/logout.js"></script>
+</body>
+
+</html>

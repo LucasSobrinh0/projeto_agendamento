@@ -10,7 +10,8 @@ class ClienteSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class AgendamentoSerializer(serializers.ModelSerializer):
-    cliente = serializers.SlugRelatedField(slug_field='nome', queryset=Cliente.objects.all())
+    cliente = serializers.PrimaryKeyRelatedField(queryset=Cliente.objects.all(), required=False)
+    data_hora = serializers.DateTimeField(required=False)
 
     class Meta:
         model = Agendamento
