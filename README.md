@@ -1,5 +1,7 @@
 Clone o repositório.
 
+git clone https://github.com/LucasSobrinh0/projeto_agendamento
+
 Crie um ambiente virtual no python: python -m venv env
 
 Ative o ambiente virtual: env\Scripts\activate
