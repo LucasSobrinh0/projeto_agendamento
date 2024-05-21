@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Evitar o comportamento padrão de submissão do formulário
         const clienteSelect = document.getElementById('cliente');
-        const clienteNome = clienteSelect.options[clienteSelect.selectedIndex].text; // Pegar o nome do cliente
+        const clienteNome = clienteSelect.options[clienteSelect.selectedIndex].value; // Pegar o nome do cliente
         const dataHora = formatarDataHora(document.getElementById('dataHora').value);
         const observacoes = document.getElementById('observacoes').value;
 
