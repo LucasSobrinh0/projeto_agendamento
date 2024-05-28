@@ -1,3 +1,24 @@
+# Sitema de agendamento online
+
+## Sobre
+
+Este projeto foi desenvolvido para uma apresentação de projetos dentro do curso superior, porém, foi utilizado para aprimorar nossas habilidades com programação web e ferramentas de desenvolvimento.
+
+## Layout
+
+![Layout](./img/layout.png)
+
+## Tecnologias Usadas
+
+- Python
+- Django Rest Framework
+- JavaScript
+- Bootstrap
+- HTML
+- CSS
+
+## Como usar
+
 Clone o repositório.
 
 git clone https://github.com/LucasSobrinh0/projeto_agendamento
@@ -21,3 +42,11 @@ PARA USAR A APLICAÇÃO, VOCÊ PRECISA ADICIONAR UM SUPER USUÁRIO ANTES:
 cd agendamento
 
 python manage.py createsuperuser
+
+## Autor
+
+Lucas Sobrinho Carneiro, Herick Magnom
+
+Linkedin: https://www.linkedin.com/in/lucas-sobrinho-c-b9b6661b9/
+
+Email: lucas.sobrinho.crn@gmail.com
