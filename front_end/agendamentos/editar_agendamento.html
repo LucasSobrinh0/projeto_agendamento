@@ -9,13 +9,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="editar_agendamneto.css">
   <title>Editar Agendamento</title>
 </head>
 
 <body>
   <nav>
-    <h1 href="">Agendamento</h1>
-    <div>
+    <div class="container d-flex justify-content-center">
       <a href="../index/index.html">Início</a>
       <a href="../clientes/criar_cliente.html">Criar cliente</a>
       <a href="listar_agendamento.html">Agendamentos</a>
@@ -25,19 +25,22 @@
   </nav>
 
   <main class="d-flex flex-column justify-content-center align-items-center text-center my-5">
-
-    <h1>Editar Agendamento</h1>
     <form id="editarAgendamentoForm">
-      <h2 id="nomeCliente"></h2>
-      <label for="dataHora">Data e Hora:</label>
-      <input type="datetime-local" id="dataHora" name="dataHora"><br>
+      <h2 id="nomeCliente">Nome do Cliente</h2>
+      <div class="mb-3">
+        <label for="dataHora" class="form-label">Data e Hora:</label>
+        <input type="datetime-local" id="dataHora" name="dataHora" class="form-control" required>
+      </div>
 
-      <label for="observacoes">Observações:</label>
-      <textarea id="observacoes" name="observacoes"></textarea><br>
+      <div class="mb-3">
+        <label for="observacoes" class="form-label">Observações:</label>
+        <textarea id="observacoes" name="observacoes" class="form-control" rows="3" required></textarea>
+      </div>
 
-      <button type="submit">Salvar</button>
+      <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
   </main>
+
   <script src="editar_agendamento.js"></script>
   <script src="../logout/logout.js"></script>
 </body>
