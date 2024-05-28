@@ -6,7 +6,7 @@ Este projeto foi desenvolvido para uma apresentação de projetos dentro do curs
 
 ## Layout
 
-![Layout](./img/layout.png)
+![Layout](./img/layout.gif)
 
 ## Tecnologias Usadas
 
