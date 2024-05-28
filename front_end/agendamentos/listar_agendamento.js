@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li>Data e Hora: ${agendamento.data_hora}</li>
                     <li>Observações: ${agendamento.observacoes}</li>
                     <li>
-                        <button data-agendamento-id="${agendamento.id}" class="editar-button">Editar</button>
-                        <button data-agendamento-id="${agendamento.id}" class="remover-button">Remover</button>
+                        <button data-agendamento-id="${agendamento.id}" class="editar-button btn btn-primary">Editar</button>
+                        <button data-agendamento-id="${agendamento.id}" class="remover-button btn btn-danger">Remover</button>
                     </li>
                 `;
                 listaAgendamentos.appendChild(agendamentoItem);

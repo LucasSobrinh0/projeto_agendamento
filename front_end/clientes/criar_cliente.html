@@ -34,12 +34,12 @@
 
             <div class="mb-3">
                 <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" id="cpf" name="cpf" class="form-control" required>
+                <input type="text" id="cpf" name="cpf" class="form-control" maxlength="14" required>
             </div>
 
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" class="form-control" required>
+                <input type="text" id="telefone" name="telefone" class="form-control" maxlength="15" required>
             </div>
 
             <div class="mb-3">
@@ -50,6 +50,7 @@
             <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
     </main>
+    <script src="../inputmask/inputmask.js"></script>
     <script src="criar_cliente.js"></script>
     <script src="../logout/logout.js"></script>
 </body>

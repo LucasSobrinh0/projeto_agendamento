@@ -39,12 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const editarButton = document.createElement('button');
       editarButton.textContent = 'Editar';
       editarButton.dataset.clienteId = cliente.id;
+      editarButton.classList.add('btn', 'btn-primary'); // Adiciona as classes Bootstrap
       acoesCliente.appendChild(editarButton);
   
       const removerButton = document.createElement('button');
       removerButton.textContent = 'Remover';
       removerButton.dataset.clienteId = cliente.id;
-      removerButton.classList.add('remover-button');
+      removerButton.classList.add('btn', 'btn-danger','mx-1', 'remover-button'); // Adiciona as classes Bootstrap
       acoesCliente.appendChild(removerButton);
   
       listaClientes.appendChild(acoesCliente);
