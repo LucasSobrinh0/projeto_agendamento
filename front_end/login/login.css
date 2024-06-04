@@ -1,49 +1,42 @@
 body {
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #222;
   color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 .login-card {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  text-align: left;
+  background-color: #333;
+  color: #fff;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: bold;
+.login-card h1 {
+  color: #fff;
 }
 
 .form-label {
-  font-weight: bold;
-  color: #333;
-}
-
-.form-control {
-  border: 2px solid #ddd;
-  border-radius: 5px;
-}
-
-.form-control:focus {
-  border-color: #6e8efb;
-  box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+  color: #fff;
 }
 
 .btn-primary {
-  background-color: #6e8efb;
-  border: none;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-primary:hover {
-  background-color: #5a7de9;
-  transform: scale(1.05);
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
-.btn-primary:active {
-  background-color: #4d6fd3;
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.input-group-text {
+  background-color: #444;
+  color: #fff;
+  border-color: #444;
+}
+
+.input-group-text i {
+  font-size: 1.2rem;
 }
