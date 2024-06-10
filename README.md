@@ -45,7 +45,7 @@ python manage.py createsuperuser
 
 ## Autor
 
-Lucas Sobrinho Carneiro, Herick Magnom
+Lucas Sobrinho Carneiro, Herick Magnom, Lucas Benencase
 
 Linkedin: https://www.linkedin.com/in/lucas-sobrinho-c-b9b6661b9/
 
